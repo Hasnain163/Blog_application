@@ -94,6 +94,11 @@ img{
  .logo{
     font-size: 4rem;
  }
+
+ #bar_icon{
+  display: none;
+ }
+
  nav ul{
     display:flex;
     gap: 2rem;  
@@ -342,6 +347,43 @@ textarea{
 
 /* contact section end here */
 
+/* footer section start here */
+.footer{
+  background-color: #222;
+  color: #fff;
+  min-height: 5vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 1rem ;
+}
+
+.copyright_text{
+  font-size: 1.2rem;
+}
+
+.footer_link{
+ color: #fff;
+  transition: var(--transition);
+}
+.footer_link:hover{
+  color:orange;
+  transform: scale(2);
+
+}
+
+.footer_nav{
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer_icon{
+  font-size: 2rem;
+}
+/* footer section end here */
+
 /* responsive start here */
 @media screen and (max-width:992px) {
     .banner{
@@ -400,6 +442,15 @@ textarea{
         flex-direction: column;
       }
 
+      #bar_icon{
+        display: block;
+        margin: 2rem 0;
+       }
+
+       .hidden{
+        display: none;
+       }
+
       nav ul{
         flex-direction: column;
         padding-left: 5rem;
@@ -447,6 +498,10 @@ textarea{
      .form-control input,textarea{
      margin-bottom: 0.5rem;
     
+    }
+
+    .footer{
+      flex-direction: column;
     }
 } 
 
